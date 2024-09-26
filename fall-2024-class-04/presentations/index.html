@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>reveal.js - Markdown Example</title>
+
+	<link rel="stylesheet" href="./dist/reveal.css">
+	<link rel="stylesheet" href="./dist/theme/black.css" id="theme">
+
+	<link rel="stylesheet" href="./plugin/highlight/monokai.css">
+</head>
+
+<body>
+
+	<div class="reveal">
+
+		<div class="slides">
+
+			<!-- Slides are separated by three dashes (the default) -->
+			<section data-markdown data-separator="^\n----\n$" data-separator-vertical="^\n--\n$">
+				<script type="text/template">
+					## Class 4: ML Basics (Emphasis on Neural Networks)
+					---
+					<img src="./images/ruc_practical_ai_logo.svg" style="display: block; margin: 0 auto; " alt="drawing" width="450"/>
+
+					----
+
+					## Deep Learning and ML References
+					---
+
+					* Deep Learning (Goodfellow, Bengio, Courville)
+					* AI: A Modern Approach (Russell and Norvig)
+
+					----
+
+					## Toolchain for this Class
+					---
+					<img src="./images/toolchain.svg" style="display: block; margin: 0 auto; " alt="drawing" width="1400"/>
+
+					----
+
+					## Today's Focus
+					---
+					<img src="./images/toolchain_python_highlight.svg" style="display: block; margin: 0 auto; " alt="drawing" width="1400"/>
+
+					----
+
+					## Training Toolchain
+					---
+
+					<img src="./images/training_toolchain.svg" style="display: block; margin: 0 auto; " alt="drawing" width="1400"/>
+
+					----
+
+					<img src="./images/ruc_practical_ai_logo.svg" style="display: block; margin: 0 auto; " alt="drawing" width="1400"/>
+
+
+                </script>
+			</section>
+		</div>
+	</div>
+
+	<script src="./dist/reveal.js"></script>
+	<script src="./plugin/markdown/markdown.js"></script>
+	<script src="./plugin/highlight/highlight.js"></script>
+	<script src="./plugin/notes/notes.js"></script>
+	<script src="./plugin/math/math.js"></script>
+
+	<script>
+
+		Reveal.initialize({
+			controls: true,
+			progress: true,
+			history: true,
+			center: true,
+
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX]
+		});
+
+	</script>
+
+</body>
+
+</html>
